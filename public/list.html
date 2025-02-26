@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkaufsliste bearbeiten</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 id="list-title" class="text-center">Einkaufsliste bearbeiten</h1>
+
+    <!-- Liste löschen -->
+    <button id="delete-list-btn" class="btn btn-danger w-100 mt-3"> 🗑️ Liste löschen</button>
+
+    <!-- Listenname mit Bearbeiten-Funktion -->
+    <div class="d-flex align-items-center justify-content-between mt-3">
+        <h2 id="list-name" class="list-name">Listenname</h2>
+        <button id="edit-list-name-btn" class="btn btn-secondary btn-sm"> ✏️ Listenname Bearbeiten</button>
+    </div>
+
+    <h2 class="mt-4">Artikel</h2>
+
+    <!-- Tag-Filter für Artikel -->
+    <label for="tag-filter" class="form-label">Nach Tag filtern:</label>
+    <select id="tag-filter" class="form-select">
+        <option value="all">Alle</option>
+    </select>
+
+    <!-- Artikel-Liste -->
+    <ul id="item-list" class="list-group mt-3"></ul>
+
+    <!-- Bestehende Artikel hinzufügen -->
+    <div class="mt-3">
+        <label for="existing-item-select" class="form-label">Bestehenden Artikel hinzufügen:</label>
+        <select id="existing-item-select" class="form-select">
+            <option value="">Artikel auswählen...</option>
+        </select>
+        <button id="add-existing-item-btn" class="btn btn-primary w-100 mt-2"> ➕ Artikel zur Liste hinzufügen</button>
+    </div>
+
+    <!-- Neuen Artikel hinzufügen -->
+    <button id="add-item-btn" class="btn btn-success w-100 mt-3"> 🛒 Neuen Artikel hinzufügen</button>
+
+    <h2 class="mt-4">Tags</h2>
+
+    <!-- Tag-Liste -->
+    <ul id="tag-list" class="list-group mt-3"></ul>
+    <div id="tag-message" class="message-success"></div>
+
+    <!-- Neuen Tag hinzufügen -->
+    <label for="new-tag-name" class="form-label">Neuen Tag hinzufügen:</label>
+    <div class="d-flex">
+        <input type="text" id="new-tag-name" class="form-control me-2" placeholder="Tag eingeben">
+        <button id="add-tag-btn" class="btn btn-secondary"> 🏷️ Tag hinzufügen</button>
+    </div>
+
+    <!-- Einkauf abschließen -->
+    <button id="complete-shopping-btn" class="btn btn-success w-100 mt-3"> ✅ Einkauf abschließen</button>
+    <div id="shopping-message" class="message-success"></div>
+
+    <!-- Zurück zur Hauptseite -->
+    <a href="index.html" class="btn btn-secondary mt-4 w-100" id="back-btn"> ⬅️ Zurück</a>
+</div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
