@@ -8,5 +8,3 @@ Eine Web-Applikation zur Verwaltung von Einkaufslisten.
 - Listen abhaken & als erledigt markieren
 - Optimiert für verschiedene Endgeräte (Mobile, Tablet, Desktop)
 
-## Installation
- 
